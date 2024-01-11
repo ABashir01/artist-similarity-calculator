@@ -25,11 +25,11 @@ function Results(props) {
             <div className='artists-div'>
                 <h2>You searched for</h2>
                 <div>
-                    <img src={firstArtistImage} alt="Image of Artist 1"></img>
+                    <img src={firstArtistImage} alt="Artist 1"></img>
                     <h3>{firstArtistName}</h3>
                 </div>
                 <div>
-                    <img src={secondArtistImage} alt="Image of Artist 2"></img>
+                    <img src={secondArtistImage} alt="Artist 2"></img>
                     <h3>{secondArtistname}</h3>
                 </div>
             </div>
