@@ -41,7 +41,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 98vw;
   margin: 0% 0% 1% 0%;
   padding: 1%;
   border-bottom: solid;
@@ -49,13 +49,13 @@
   color: #1a1a1a;
 }
 
-.title-div {
-  margin-left: 1%;
-}
 
 .links-div {
-  margin-right: 1%;
+  display: flex;
+  justify-content: space-between;
 }
+
+
 
 .input-div {
   display: flex;
@@ -100,6 +100,7 @@ input[type=submit] {
   border-radius: 10px;
   width: 20%;
   height: 20%;
+  font-size: large;
 }
 
 input[type=submit]:focus {
@@ -127,6 +128,7 @@ ul {
 
 a {
   color:#1a1a1a;
+  margin-left: 8px;
 }
 
 
@@ -149,5 +151,10 @@ a {
   .input-form {
     margin-top: 2vh;
     height: 25vh;
+  }
+
+  .title-div {
+    width: 45%;
+    text-wrap: wrap;
   }
 }

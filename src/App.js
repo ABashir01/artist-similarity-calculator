@@ -12,7 +12,6 @@ const getToken = async () => {
     method: 'POST',
     headers: {
       'Authorization': `Basic ${credentials}`,
-      // 'Content-Type': 'application/x-www-form-urlencoded'
     },
     body: new URLSearchParams({
       grant_type: 'client_credentials'
@@ -59,7 +58,6 @@ function App() {
     <div className="App">
       <Header />
       <Input token={token} setCalculatedResults={setCalculatedResults} setCalculationComplete={setCalculationComplete}/>
-      {/* {calculatedResults ? <p>{console.log("calculatedResults", calculatedResults)}</p> : null} */}
       {calculationComplete ? <Results calculatedResults={calculatedResults}/> : null}
     </div>
   );
