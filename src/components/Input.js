@@ -131,10 +131,6 @@ function Input(props) {
         currCalculatedResults["finalValue"] = finalValue;
         props.setCalculatedResults(currCalculatedResults);
         props.setCalculationComplete(true);
-        console.log(currCalculatedResults);
-
-        console.log("Genre Score: ", genreScore);
-        console.log("Similar Artist Score: ", similarArtistsScore);
     }
 
     const handleSubmit = async (event) => {
