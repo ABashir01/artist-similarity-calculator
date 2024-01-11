@@ -3,10 +3,9 @@ import {React, useState, useEffect} from 'react';
 import Input from './components/Input';
 import Header from './components/Header';
 import Results from './components/Results';
-import {client_id, client_secret} from './apiInfo';
 
 
-const credentials = btoa(`${client_id}:${client_secret}`);
+const credentials = btoa(`${process.env.REACT_APP_CLIENT_ID}:${process.env.REACT_APP_CLIENT_SECRET}`);
 
 const getToken = async () => {
   const authOptions = {
