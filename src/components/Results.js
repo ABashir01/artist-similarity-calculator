@@ -46,7 +46,7 @@ function Results(props) {
                     <ul>{Array.from(secondArtistGenres).map((element) => (
                         <li>{element.charAt(0).toUpperCase() + element.slice(1)}</li>
                     ))}</ul>
-                    <h3>Shared genres</h3>
+                    <h3>Similar genres</h3>
                     <ul>{Array.from(sharedGenres).map((element) => (
                         <li>{element.charAt(0).toUpperCase() + element.slice(1)}</li>
                     ))}</ul>

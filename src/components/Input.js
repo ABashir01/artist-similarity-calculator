@@ -35,17 +35,31 @@ function Input(props) {
         let weightingGenreScore = firstArtistGenres.size + secondArtistGenres.size;
 
         firstArtistGenres.forEach((genre) => {
-            if (secondArtistGenres.has(genre)) {
-                genreScore++;
-                sharedGenres.add(genre);
-            } 
+            // if (secondArtistGenres.has(genre)) {
+            //     genreScore++;
+            //     sharedGenres.add(genre);
+            // } 
+            secondArtistGenres.forEach((secondGenre) => {
+                if (secondGenre.includes(genre)) {
+                    genreScore++;
+                    sharedGenres.add(genre);
+                    sharedGenres.add(secondGenre);
+                }
+            });
         });
 
         secondArtistGenres.forEach((genre) => {
-            if (firstArtistGenres.has(genre)) {
-                genreScore++;
-                sharedGenres.add(genre);
-            }
+            // if (firstArtistGenres.has(genre)) {
+            //     genreScore++;
+            //     sharedGenres.add(genre);
+            // }
+            firstArtistGenres.forEach((secondGenre) => {
+                if (secondGenre.includes(genre)) {
+                    genreScore++;
+                    sharedGenres.add(genre);
+                    sharedGenres.add(secondGenre);
+                }
+            });
         });
         
         //Adding to results object
@@ -105,7 +119,10 @@ function Input(props) {
         similarArtistsScore = similarArtistsScore / (firstArtistSimilarArtists.size + secondArtistSimilarArtists.size);
 
         //---- Calculate final percentage --------------------------------------
-        const finalValue = Math.round(((0.6 * genreScore) + (0.4 * similarArtistsScore)) * 100);
+        let finalValue = Math.round(((0.6 * genreScore) + (0.4 * similarArtistsScore)) * 100);
+        if (finalValue > 100) {
+            finalValue = 100;
+        };
 
         setLoading(false);
         setPleaseWait(false);
