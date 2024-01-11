@@ -24,7 +24,7 @@ function Input(props) {
 
     const calculateSimilarity = async (firstArtistMap, firstArtistPlaylists, secondArtistMap, secondArtistPlaylists) => {
         // console.log("Starting");
-        const startTime = (new Date()).getTime();
+        // const startTime = (new Date()).getTime();
 
         let currCalculatedResults = {};
         currCalculatedResults["firstArtist"] = {};
@@ -213,7 +213,7 @@ function Input(props) {
         // console.log("Playlists Score: ", playlistScore);
         // console.log("Final Value: ", finalValue);
         // console.log("FINISHED!");
-        const endTime = (new Date()).getTime();
+        // const endTime = (new Date()).getTime();
         // console.log("Operation took this many seconds:", (endTime - startTime)/1000);
     }
 

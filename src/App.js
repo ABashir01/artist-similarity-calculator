@@ -52,7 +52,7 @@ function App() {
 
   useEffect(() => {
     genNewToken();
-  }, []);
+  }, [tokenFailed]);
 
   
   return (
