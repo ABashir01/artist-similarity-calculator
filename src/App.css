@@ -3,7 +3,6 @@
 
 .App {
   text-align: center;
-  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,7 +40,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 98vw;
+  width: 98%;
   margin: 0% 0% 1% 0%;
   padding: 1%;
   border-bottom: solid;
@@ -50,10 +49,6 @@
 }
 
 
-.links-div {
-  display: flex;
-  justify-content: space-between;
-}
 
 
 
@@ -62,7 +57,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
+  width: 80%;
   height: 50%;
 }
 
@@ -71,7 +66,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   height: 60vh;
 }
 
@@ -128,7 +123,19 @@ ul {
 
 a {
   color:#1a1a1a;
+  margin: 0px;
+  padding: 0px;
   margin-left: 8px;
+}
+
+.results-div {
+  width: 50vw;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  max-width: 70vw;
 }
 
 
