@@ -75,7 +75,7 @@
 }
 
 input[type=text] {
-  width: 60%;
+  width: 80%;
   height: 25%;
   background-color: #2b2b2b;
   border: 0;
@@ -163,5 +163,13 @@ img {
   .title-div {
     width: 45%;
     text-wrap: wrap;
+  }
+
+  input[type=text] {
+    font-size:medium;
+  }
+
+  input[type=submit] {
+    width: 50%;
   }
 }
