@@ -4,9 +4,8 @@ import Input from './components/Input';
 import Header from './components/Header';
 import Results from './components/Results';
 
-const client_id = '6bfdf28758ca479a8afa8a503feab7d2';
-const client_secret = '9141120dbcec4e669dc4ad7f5e06718e';
-const credentials = btoa(`${client_id}:${client_secret}`);
+
+const credentials = btoa(`${process.env.client_id}:${process.env.client_secret}`);
 
 const getToken = async () => {
   const authOptions = {
