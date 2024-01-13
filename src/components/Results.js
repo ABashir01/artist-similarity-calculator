@@ -16,14 +16,14 @@ function Results(props) {
     return (
         <div className='results-div'>
             <div className='percentage-div'>
-                <h1>Your result is</h1>
+                <h1><u>Your result is</u></h1>
                 <h2>{props.calculatedResults["finalValue"] + '%'}</h2>
             </div>
             
             <hr />
 
             <div className='artists-div'>
-                <h2>You searched for</h2>
+                <h2><u>You searched for</u></h2>
                 <div>
                     <img src={firstArtistImage} alt="Artist 1"></img>
                     <h3>{firstArtistName}</h3>
@@ -38,15 +38,15 @@ function Results(props) {
 
             <div className='calculated-div'>
                 <div className="genre-div">
-                    <h3>{firstArtistName}'s genres</h3>
+                    <h3><u>{firstArtistName}'s genres</u></h3>
                     <ul>{Array.from(firstArtistGenres).map((element) => (
                         <li>{element.charAt(0).toUpperCase() + element.slice(1)}</li>
                     ))}</ul>
-                    <h3>{secondArtistname}'s genres</h3>
+                    <h3><u>{secondArtistname}'s genres</u></h3>
                     <ul>{Array.from(secondArtistGenres).map((element) => (
                         <li>{element.charAt(0).toUpperCase() + element.slice(1)}</li>
                     ))}</ul>
-                    <h3>Similar genres</h3>
+                    <h3><u>Similar genres</u></h3>
                     <ul>{Array.from(sharedGenres).map((element) => (
                         <li>{element.charAt(0).toUpperCase() + element.slice(1)}</li>
                     ))}</ul>
