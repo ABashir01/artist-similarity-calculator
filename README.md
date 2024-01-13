@@ -1,6 +1,6 @@
 # artist-similarity-calculator 
 https://artistsimilaritycalc.netlify.app/
-<br/>
+
 
 ## Project Details
 Simple app for calculating similarity between 2 music artists using genres and similar artists from the Spotify API. Simply enter 2 artists in the 2 text boxes and hit calculate and it will give you a similarity score back!
